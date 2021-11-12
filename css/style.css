@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header{
+    margin: 50px auto;
+     max-width: 500px;
+     text-align: center;
+}
+
+h1{
+    font-weight: 300;
+     margin: 0;
+}
+h1.strong{
+    font-weight: 600;
+}
+
+p{
+    color: hsl(229, 6%, 66%);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.box{
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    margin: 15px;
+    transition: all 0.2s;
+}
+
+.box-Red:hover{
+    bottom: 1px;
+    text-shadow: 5px 5px 3px white;
+    box-shadow: 5px 5px 20px hsl(0, 78%, 62%);
+}
+.box-Cyan:hover{
+    bottom: 1px;
+    text-shadow: 5px 5px 3px white;
+    box-shadow: 5px 5px 20px hsl(180, 62%, 55%);
+}
+.box-Orange:hover{
+    bottom: 1px;
+    text-shadow: 5px 5px 3px white;
+    box-shadow: 5px 5px 20px hsl(34, 97%, 64%);
+}
+.box-Blue:hover{
+    bottom: 1px;
+    text-shadow: 5px 5px 3px white;
+    box-shadow: 5px 5px 20px hsl(212, 86%, 64%);
+}
+
+.box::after {
+    content: '';
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.box-Red::after{
+    background-color:hsl(0, 78%, 62%);
+
+}
+
+.box-Cyan::after{
+    background-color: hsl(180, 62%, 55%);
+}
+
+.box-Orange::after{
+    background-color:hsl(34, 97%, 64%) ;
+}
+
+.box-Blue::after{
+    background-color: hsl(212, 86%, 64%) ;
+}
+
+.box-push{
+    transform: translateY(50%);
+}
+.box h2{
+    margin: 0;
+}
+.box p{
+    /*font-size: 14px;*/
+    margin: 15px 0 30px;
+}
+.box img{
+    display: block;
+    margin-left: auto;
+}
+
+footer{
+    text-align: center;
+}
+
+
+@media ( max-width: 775px){
+    .box-push{
+        transform: translateY(0);
+    }
+}
